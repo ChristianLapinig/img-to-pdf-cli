@@ -1,0 +1,12 @@
+# IDE support
+.idea
+.vscode
+
+# Node modules
+node_modules
+
+# Environment variables
+.env
+
+# Misc.
+.DS_Store
