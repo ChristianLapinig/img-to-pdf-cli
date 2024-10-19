@@ -4,9 +4,7 @@
   "description": "CLI to convert images to PDFs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "npx tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +15,11 @@
     "pdf",
     "cli"
   ],
-  "author": "Christian Lapinig",
+  "author": {
+    "name": "Christian Lapinig",
+    "email": "lapinig.a.christian@gmail.com",
+    "url": "https://github.com/ChristianLapinig"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ChristianLapinig/img-to-pdf-cli/issues"
@@ -26,9 +28,5 @@
   "dependencies": {
     "commander": "^12.1.0",
     "image-to-pdf": "^2.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.7.6",
-    "typescript": "^5.6.3"
   }
 }
