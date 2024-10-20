@@ -2,7 +2,11 @@
   "name": "img-to-pdf-cli",
   "version": "1.0.0",
   "description": "CLI to convert images to PDFs",
+  "type": "module",
   "main": "index.js",
+  "bin": {
+    "img-to-pdf": "./index.js"
+  },
   "scripts": {
     "start": "node index.js"
   },

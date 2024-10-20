@@ -13,6 +13,8 @@ const pages = options.output ? process.argv.slice(4) : process.argv.slice(2);
 const outputPath = options.output || "output.pdf";
 
 console.log("\x1b[36m Generating PDF... \x1b[0m");
+
 imgToPdf(pages, imgToPdf.sizes.LETTER)
   .pipe(fs.createWriteStream(`${outputPath}`))
+
 console.log(`\x1b[32m Successfully generated PDF under ${outputPath} \x1b[0m`);
