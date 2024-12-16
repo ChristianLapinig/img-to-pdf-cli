@@ -1,6 +1,8 @@
-const { Command } = require("commander");
-const imgToPdf = require("image-to-pdf");
-const fs = require("fs");
+#!/usr/bin/env node
+
+import { Command } from "commander";
+import imgToPdf from "image-to-pdf";
+import fs from "fs";
 
 const program = new Command();
 program
@@ -9,9 +11,10 @@ program
   .option("-o, --output <value>", "Name of output file (default = ./output.pdf)")
   .parse(process.argv);
 const options = program.opts();
-const pages = options.output ? process.argv.slice(4) : process.argv.slice(2);
 const outputPath = options.output || "output.pdf";
+const pages = program.args;
 
+// TODO: validate paths
 console.log("\x1b[36m Generating PDF... \x1b[0m");
 
 imgToPdf(pages, imgToPdf.sizes.LETTER)

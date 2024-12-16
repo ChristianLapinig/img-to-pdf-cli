@@ -1,11 +1,11 @@
 {
-  "name": "img-to-pdf-cli",
+  "name": "img2pdf-cli",
   "version": "1.0.0",
   "description": "CLI to convert images to PDFs",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "img-to-pdf": "./index.js"
+    "img2pdf": "index.js"
   },
   "scripts": {
     "start": "node index.js"
@@ -26,9 +26,9 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChristianLapinig/img-to-pdf-cli/issues"
+    "url": "https://github.com/ChristianLapinig/img2pdf-cli/issues"
   },
-  "homepage": "https://github.com/ChristianLapinig/img-to-pdf-cli#readme",
+  "homepage": "https://github.com/ChristianLapinig/img2pdf-cli#readme",
   "dependencies": {
     "commander": "^12.1.0",
     "image-to-pdf": "^2.0.0"
